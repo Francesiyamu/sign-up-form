@@ -62,24 +62,140 @@ main{
 }
 
 
+/*----right flex----*/
 
+.right-flex-box{
+   margin: 0 auto;
+   width: 100%;
+   max-width: 540px;
+   height: auto;
+}
 
+.trial-info{
+    background-color: var(--Blue);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--Grayish-Blue);
+    padding: 1em 6em;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
+.trial-info strong{
+    color: #fff;
+}
 
-/*.input-with-icon.error {
+#form-details{
+    background-color: #fff;
+    padding: 2em 3em ;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;            /* Add these lines */
+    flex-direction: column;   /* Stack children vertically */
+    align-items: center; 
+    justify-content: center;
+}
+
+#form-details >div{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+input[type = text],
+input[type = email],
+input[type = password]{
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid var(--Blue);
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid var(--Blue);
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--Dark-Blue);
+}
+
+.input-with-icon {
+  background-image: none;
+  border-color: var(--Blue);
+}
+
+/*.input-with-icon.error{
   background-image: url('../images/icon-error.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
   border-color: red;
+  
 }*/
 
 
+.submit-btn{
+    width: 100%;
+    background-color: var(--Green);
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    margin: 1.5em 0;
+    box-shadow: 0px 3px rgb(47, 107, 47);
+}
+
+.submit-btn:hover{
+    background-color: #77E2B3;
+    cursor: pointer;
+}
+
+.terms-and-services{
+    color: var(--Grayish-Blue);
+    font-size: 0.6875rem;
+}
+
+.terms-and-services >span{
+    color: var(--Red);
+}
 
 
 
+@media screen and (max-width: 768px){
+main{
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.left-flex-box{
+   margin-top: 7em;
+}
 
 
+.left-flex-box h1{
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+}
 
+.left-flex-box p{
+    font-size: 1rem;
+    line-height: 1.625;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.trial-info{
+    padding: 1em 4em;
+}
+}
+
+/*-----footer ---*/
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin: 3em 0;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
