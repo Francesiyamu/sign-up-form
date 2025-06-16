@@ -151,6 +151,11 @@ input::placeholder{
   
 }*/
 
+.error-message{
+    color: var(--Red);
+    text-align: end;
+}
+
 
 .submit-btn{
     width: 100%;
