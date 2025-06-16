@@ -113,15 +113,29 @@ input[type = password]{
     outline: none;
 }
 
-input:focus{
+
+input:focus,
+input:valid{
     border: 2px solid var(--Blue);
     outline: none;
 }
 
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:required{
+    background-image: url('../images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border-color: red;
+}
+
+
 input::placeholder{
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--Dark-Blue);
+    color: var(--Grayish-Blue);
 }
 
 .input-with-icon {
