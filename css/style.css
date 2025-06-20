@@ -51,7 +51,8 @@ main{
 }
 
 .left-flex-box h1{
-    font-size:3.125rem;
+    /*font-size:3.125rem;*/
+    font-size: clamp(1.75rem, 5vw, 3.125rem);
     line-height: 1.1;
     margin-bottom: 0.8em;
 }
@@ -143,13 +144,7 @@ input::placeholder{
   border-color: var(--Blue);
 }
 
-/*.input-with-icon.error{
-  background-image: url('../images/icon-error.svg');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  border-color: red;
-  
-}*/
+
 
 .error-message{
     color: var(--Red);
@@ -196,7 +191,6 @@ main{
 
 
 .left-flex-box h1{
-    font-size: 1.75rem;
     margin-bottom: 16px;
 }
 
